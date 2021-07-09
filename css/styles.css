@@ -193,8 +193,15 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  fill: var(--primary-text-color);
 
   display: flex;
+}
+
+.header-contacts-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-contacts-item:not(:last-child) {
@@ -208,6 +215,11 @@ img {
 .footer-contacts .link:focus,
 .footer-contacts .link:hover {
   color: var(--primary-accent-color);
+  fill: var(--primary-accent-color);
+}
+
+.contacts-icon {
+  margin-right: 10px;
 }
 
 /* Sections */
