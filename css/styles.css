@@ -79,6 +79,14 @@ p {
   padding: 0;
 }
 
+/* Изображения */
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* CONTAINER */
 .container {
   width: 1200px;
@@ -125,10 +133,17 @@ p {
   background-color: #188ce8;
 }
 
-img {
-  display: block;
-  width: 100%;
-  height: auto;
+/* Ссылки на соц.сети */
+
+.social-item-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* HEADER */
@@ -407,9 +422,43 @@ img {
 } */
 
 .team-card-text {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
+  border-radius: 0 0 4px 4px;
   background-color: var(--header-bg-color);
+}
+
+.team .social-list {
+  margin-top: 16px;
+  /* margin-left: -10px; */
+
+  display: flex;
+  justify-content: center;
+}
+
+.team .social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team .social-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+}
+
+.team .social-item .link:hover .social-icon,
+.team .social-item .link:focus .social-icon {
+  fill: var(--secondary-accent-color);
+  background-color: var(--primary-accent-color);
+  border-radius: 50%;
+}
+
+.team .social-icon {
+  fill: #afb1b8;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* Секция Постоянные клиенты */
