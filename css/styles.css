@@ -127,6 +127,8 @@ p {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* HEADER */
@@ -200,9 +202,16 @@ img {
 
 .header-contacts-item {
   display: flex;
+  align-items: center;
+}
+
+.header-contacts-item .link {
+  display: flex;
 }
 
 .contacts-icon {
+  margin-right: 10px;
+
   justify-content: center;
   align-items: center;
 }
@@ -219,10 +228,6 @@ img {
 .footer-contacts .link:hover {
   color: var(--primary-accent-color);
   fill: var(--primary-accent-color);
-}
-
-.contacts-icon {
-  margin-right: 10px;
 }
 
 /* Sections */
@@ -389,13 +394,13 @@ img {
 .team-card-text {
   padding-top: 30px;
   padding-bottom: 30px;
-  /* background-color: var(--header-bg-color); */
+  background-color: var(--header-bg-color);
 }
 
 /* Секция Примеры работ */
-.example {
-  /* background-color: var(--header-bg-color); */
-}
+/* .example {
+  background-color: var(--header-bg-color);
+} */
 
 .filter-list {
   margin-bottom: 50px;
