@@ -200,6 +200,9 @@ img {
 
 .header-contacts-item {
   display: flex;
+}
+
+.contacts-icon {
   justify-content: center;
   align-items: center;
 }
