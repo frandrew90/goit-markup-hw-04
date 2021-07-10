@@ -135,10 +135,11 @@ img {
 
 /* Ссылки на соц.сети */
 
-.social-item-box {
+.social-box {
+  display: flex;
+  justify-content: center;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
 }
 
 .social-icon {
@@ -434,21 +435,10 @@ img {
   display: flex;
 }
 
-/* .team .social-item:not(:last-child) {
-  margin-right: 10px;
-} */
-
 .team .social-item {
   margin-left: 10px;
 
   flex-basis: calc((100% / 3) - 10px);
-}
-
-.social-box {
-  display: flex;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
 }
 
 .social-item .link {
@@ -470,11 +460,6 @@ img {
 .team .social-icon {
   fill: #afb1b8;
   align-self: center;
-}
-
-.social-icon {
-  width: 20px;
-  height: 20px;
 }
 
 /* Секция Постоянные клиенты */
@@ -597,12 +582,12 @@ img {
   line-height: 1.71;
 }
 
-.page-footer .logo {
+.page-footer .footer-contacts .logo {
   margin-bottom: 20px;
   margin-right: 0;
   display: inline-block;
 
-  color: inherit;
+  color: var(--secondary-accent-color);
 }
 
 .page-footer address {
@@ -617,4 +602,52 @@ img {
 
 .footer-contacts-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.page-footer .social-list {
+  display: flex;
+}
+
+.footer-info {
+  display: flex;
+}
+
+.footer-links {
+  margin-left: 70px;
+}
+
+.footer-links .social-item .link:hover .social-icon,
+.footer-links .social-item .link:focus .social-icon {
+  fill: var(--secondary-accent-color);
+}
+
+.footer-links .social-item .link:hover .social-box,
+.footer-links .social-item .link:hover .social-box {
+  background-color: var(--primary-accent-color);
+  border-radius: 50%;
+}
+
+.footer-links .social-icon {
+  fill: var(--secondary-accent-color);
+  align-self: center;
+}
+
+.footer-links .social-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-links .social-item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.footer-links h2 {
+  margin-bottom: 20px;
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
